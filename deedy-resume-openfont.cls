@@ -1,5 +1,7 @@
 \usepackage{enumitem}
 \usepackage{multirow}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
 
 % Intro Options
 \ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
@@ -36,11 +38,11 @@
 % Date command
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\textblockorigin{0mm}{5mm} % start everyth
+\textblockorigin{0mm}{5mm} % start everything
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 \hspace{-0.5 in}Last Updated on
-\today 
+\today
 
 \end{textblock}}
 
