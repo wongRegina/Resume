@@ -59,6 +59,7 @@
          \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #5 & \\
     \end{tabular}
 \end{center}
+\vspace{-4pt}
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.2pt}}
 \vspace{-15pt}
 }
@@ -66,7 +67,7 @@
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{22pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{16pt}{22pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
