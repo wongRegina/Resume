@@ -14,7 +14,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
+\usepackage[hmargin=1cm, vmargin=0.5cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -43,20 +43,20 @@
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 \hspace{-0.5 in}Last Updated on
 \today
-
 \end{textblock}}
 
 %  New Name command
-\newcommand{\namesections}[7]{
+\newcommand{\namesections}[8]{
 \begin{center}
     \begin{tabular}{l|l l} 
      {\multirow{4}{25em}{\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{0cm}\selectfont #1 
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2}} & \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #7  &
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{0cm}\selectfont #1
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2}} & \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #8  &
          \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3 \\ &
-         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #6  &
-         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4\\ &
-         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #5 & \\
+         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #5  &
+         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #6\\ &
+         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4 & 
+         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #7\\ 
     \end{tabular}
 \end{center}
 \vspace{-4pt}
