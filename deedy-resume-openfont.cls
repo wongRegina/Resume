@@ -1,6 +1,8 @@
 \usepackage{enumitem}
 \usepackage{multirow}
 \usepackage[ddmmyyyy]{datetime}
+\usepackage{changepage}
+\usepackage{adjustbox,lipsum}
 \renewcommand{\dateseparator}{.}
 
 % Intro Options
@@ -46,20 +48,21 @@
 \end{textblock}}
 
 %  New Name command
-\newcommand{\namesections}[8]{
-\begin{center}
+\newcommand{\namesections}[7]{
+\begin{table}[]
     \begin{tabular}{l|l l} 
-     {\multirow{4}{25em}{\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{0cm}\selectfont #1
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2}} & \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #8  &
+     {\multirow{4}{27.5em}{\sffamily
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{36pt}{0cm}\selectfont #1
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2}} & 
+		 \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #5  &
          \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3 \\ &
-         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #5  &
+         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4  &
          \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #6\\ &
-         \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #4 & 
          \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #7\\ 
     \end{tabular}
-\end{center}
-\vspace{-4pt}
+    
+\vspace{-0.8 cm}
+\end{table}
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.2pt}}
 \vspace{-15pt}
 }
